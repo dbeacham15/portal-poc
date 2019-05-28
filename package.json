@@ -1,0 +1,22 @@
+{
+  "name": "portal-poc",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "lint": "cd client && yarn lint"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "js-yaml": "^3.13.1",
+    "markdown": "^0.5.0",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "concurrently": "^3.5.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0"
+  }
+}

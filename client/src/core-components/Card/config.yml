@@ -1,0 +1,29 @@
+componentName: Card
+slug: card
+tags:
+  - Card
+  - Information
+  - Core
+platforms:
+  - Desktop
+  - Web
+  - Mobile
+  - Console
+description: >
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel
+  mauris ut nisi lacinia sagittis. In ut maximus est. Sed ultrices, urna ut
+  dignissim rutrum, tortor nisl euismod urna, sit amet pretium nisi ipsum eu elit.
+properties:
+  - property: title
+    type: String
+    description: Title displayed inside the card
+    required: true
+  - property: description
+    type: String
+    description: Optional description that can be inserted into the card
+  - property: onClick
+    type: function
+    description: Click Handler for the card allows implementation to control function
+  - property: children
+    type: array[Media],
+    description: Media Component is passed in as a child 
